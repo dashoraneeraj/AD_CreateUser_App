@@ -49,9 +49,6 @@ namespace AD_CreateUser_App
                 request.AddHeader("Content-Type", "application/json");
                 request.AddParameter("application/json", jObjectbody, ParameterType.RequestBody);
 
-                Console.WriteLine(request);
-                Console.ReadLine();
-
                 IRestResponse response = client.Execute(request);
                 Console.WriteLine(response.Content);
                 Console.ReadLine();
